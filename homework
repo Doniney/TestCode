@@ -1,0 +1,10 @@
+def common(nums1,nums2):
+	result = []
+	if len(nums1) == 0 or len(nums2) ==0:
+		return result
+	for i in range(len(nums1)):
+		if nums1[i] in nums2:
+			result.append(nums1[i])
+			nums2.remove(nums1[i])
+		continue
+	return result
